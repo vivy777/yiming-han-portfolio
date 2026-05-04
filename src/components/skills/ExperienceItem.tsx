@@ -19,13 +19,17 @@ export default function ExperienceItem({ experience, label = "## entry" }: Exper
         </div>
         <p className="text-xs text-neutral-600 font-mono">{experience.period}</p>
       </div>
+      {experience.summary && (
+        <p className="text-neutral-500 text-xs font-mono mb-3 italic">{experience.summary}</p>
+      )}
       {experience.photos && experience.photos.length > 0 && (
         <PhotoGallery photos={experience.photos} />
       )}
       <div className="space-y-2 border-l-2 border-neutral-800 pl-4">
-        {experience.bullets.map((bullet, i) =>
-          i === 0 ? (
-            <p key={i} className="text-neutral-400 text-sm leading-relaxed">
+        {experience.bullets.map((bullet, i) => (
+          <div key={i} className="flex gap-2">
+            <span className="text-neutral-600 font-mono text-xs mt-1 shrink-0">→</span>
+            <p className="text-neutral-400 text-sm leading-relaxed">
               {experience.event && bullet.includes(experience.event)
                 ? bullet.split(experience.event).flatMap((part, j, arr) =>
                     j < arr.length - 1
@@ -34,13 +38,8 @@ export default function ExperienceItem({ experience, label = "## entry" }: Exper
                   )
                 : bullet}
             </p>
-          ) : (
-            <div key={i} className="flex gap-2">
-              <span className="text-neutral-600 font-mono text-xs mt-1 shrink-0">→</span>
-              <p className="text-neutral-400 text-sm leading-relaxed">{bullet}</p>
-            </div>
-          )
-        )}
+          </div>
+        ))}
       </div>
     </div>
   );

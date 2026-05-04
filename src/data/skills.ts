@@ -137,7 +137,7 @@ export const education: Experience[] = [
 export const experiences: Experience[] = [
   {
     company: "RRC Polytech",
-    role: "Industry Project Team Member | Web Application",
+    role: "Security Analyst & Developer | Industry Project",
     period: "Jan 2026 – May 2026",
     photos: [
       "/experience/rrc/IMG_0352.JPEG",

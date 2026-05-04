@@ -29,6 +29,7 @@ export interface Experience {
   role: string;
   period: string;
   event?: string;
+  summary?: string;
   photos?: string[];
   bullets: string[];
 }
