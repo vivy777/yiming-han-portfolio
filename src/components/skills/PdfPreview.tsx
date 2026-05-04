@@ -26,7 +26,8 @@ export default function PdfPreview({ title, pdfPath }: PdfPreviewProps) {
       const vp = page.getViewport({ scale: 1.5 });
       canvas.width = vp.width;
       canvas.height = vp.height;
-      await page.render({ canvasContext: canvas.getContext("2d")!, viewport: vp }).promise;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      await page.render({ canvasContext: canvas.getContext("2d")!, viewport: vp, canvas } as any).promise;
 
       if (!cancelled) setImgUrl(canvas.toDataURL());
     }
