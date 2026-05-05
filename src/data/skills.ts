@@ -109,7 +109,7 @@ export const education: Experience[] = [
       "/education/rrc/44950c83-68e7-42fd-a94c-f8c86fed74a2.jpg",
     ],
     bullets: [
-      "Cumulative GPA: 4.3 / 4.5",
+      "Honours Graduate · Program GPA: 4.27 / 4.5",
       "Secure Network Design - Implemented a multi-user enterprise network by configuring Windows Server, Active Directory, Group Policy, and RBAC, while coordinating firewall integration, resulting in a secure, documented infrastructure with verified access control.",
       "Secure PHP & MySQL Web Design - Built and deployed a security-hardened PHP/MariaDB web on Debian Linux (Oracle VM), implementing secure authentication, role-based authorization, brute-force protection, parameterized SQL queries, and comprehensive XSS mitigation to meet industry-aligned secure web development requirements.",
       "PridePoint Bank Business Continuity & Disaster Recovery Plan - Conducted enterprise risk assessment and IT dependency mapping for a simulated financial institution, defining recovery strategies, RTOs, and control gaps to produce a compliant, testable BCP/DRP framework.",

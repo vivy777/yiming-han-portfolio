@@ -6,7 +6,7 @@ import FlowingGallery from "@/components/ui/FlowingGallery";
 const badges = [
   { label: "CompTIA Security+", emoji: "🔐", bg: "bg-red-900/40", border: "border-red-700/50", text: "text-red-300" },
   { label: "CompTIA Network+", emoji: "🌐", bg: "bg-blue-900/40", border: "border-blue-700/50", text: "text-blue-300" },
-  { label: "GPA 4.3 / 4.5", emoji: "🎓", bg: "bg-purple-900/40", border: "border-purple-700/50", text: "text-purple-300" },
+  { label: "Honours Graduate · RRC Polytech", emoji: "🎓", bg: "bg-purple-900/40", border: "border-purple-700/50", text: "text-purple-300" },
   { label: "Winnipeg, CA", emoji: "📍", bg: "bg-green-900/40", border: "border-green-700/50", text: "text-green-300" },
 ];
 
@@ -61,7 +61,7 @@ export default function Home() {
         <ul className="space-y-2.5 text-sm text-neutral-300 leading-relaxed">
           <li>
             <span className="text-neutral-500 font-mono mr-2">🌏</span>
-            Global background — studied in <span className="text-neutral-100">Australia</span> (Federation University), now based in <span className="text-neutral-100">Canada</span>
+            Global background — studied at <span className="text-neutral-100">Federation University Australia</span>, now based in <span className="text-neutral-100">Canada</span>
           </li>
           <li>
             <span className="text-neutral-500 font-mono mr-2">🔒</span>
