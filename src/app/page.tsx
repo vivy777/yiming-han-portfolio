@@ -4,6 +4,7 @@ import { formatDate } from "@/lib/utils";
 import FlowingGallery from "@/components/ui/FlowingGallery";
 
 const badges = [
+  { label: "Digital Print Expert · Staples Canada", emoji: "🖨️", bg: "bg-cyan-900/40", border: "border-cyan-700/50", text: "text-cyan-300" },
   { label: "CompTIA Security+", emoji: "🔐", bg: "bg-red-900/40", border: "border-red-700/50", text: "text-red-300" },
   { label: "CompTIA Network+", emoji: "🌐", bg: "bg-blue-900/40", border: "border-blue-700/50", text: "text-blue-300" },
   { label: "Honours Graduate · RRC Polytech", emoji: "🎓", bg: "bg-purple-900/40", border: "border-purple-700/50", text: "text-purple-300" },
@@ -36,7 +37,7 @@ export default function Home() {
           Hi, I&apos;m <span className="text-blue-400">Yiming Han</span>
         </h1>
         <p className="text-neutral-500 text-sm font-mono mb-5">
-          <span className="text-neutral-600">//</span> Aspiring IT Professional · RRC Polytech · Winnipeg, CA
+          <span className="text-neutral-600">//</span> IT &amp; Cybersecurity Professional · RRC Polytech Honours Graduate · Winnipeg, CA
         </p>
 
         {/* Status badges */}
@@ -78,8 +79,8 @@ export default function Home() {
             and full-stack web tech
           </li>
           <li>
-            <span className="text-neutral-500 font-mono mr-2">🚀</span>
-            Open to <span className="text-neutral-100">IT Support</span>, <span className="text-neutral-100">Junior Network</span>, or <span className="text-neutral-100">Security</span> roles · on-site / hybrid / remote
+            <span className="text-neutral-500 font-mono mr-2">🖨️</span>
+            Working full-time as a <span className="text-neutral-100">Digital Print Expert</span> at <span className="text-neutral-100">Staples Canada</span>
           </li>
         </ul>
       </section>

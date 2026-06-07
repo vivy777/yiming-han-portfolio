@@ -13,7 +13,7 @@ export default function ProjectsPage() {
     <div>
       <PageHeader
         title="Projects"
-        subtitle="Things I've built — personal projects, experiments, and tools."
+        subtitle="Selected security, infrastructure, development, and research work."
       />
       <div className="space-y-6">
         {projects.map((project) => (

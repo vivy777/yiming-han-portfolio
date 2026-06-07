@@ -51,6 +51,7 @@ export const volunteering: Experience[] = [
     company: "ISACA Winnipeg Chapter",
     role: "Conference Volunteer",
     period: "Apr 2026",
+    summary: "Event Volunteer · On-site · Winnipeg, Manitoba, Canada",
     event: "WCISC 2026 (Western Canada Information Security Conference)",
     photos: [
       "/volunteering/wcisc/IMG_1368.JPEG",
@@ -69,6 +70,7 @@ export const volunteering: Experience[] = [
     company: "Canadian Manufacturers & Exporters",
     role: "Event Operations & Registration Support",
     period: "Jan 2026",
+    summary: "Event Volunteer · On-site · Winnipeg, Manitoba, Canada",
     event: "Made in Manitoba B2B Summit",
     photos: [
       "/volunteering/cme/Screenshot 2026-05-02 201614.png",
@@ -86,6 +88,7 @@ export const volunteering: Experience[] = [
     company: "RRC Polytech",
     role: "Speaker Liaison",
     period: "Oct 2025",
+    summary: "Conference Volunteer · On-site · Winnipeg, Manitoba, Canada",
     event: "2025 Inspire Conference",
     bullets: [
       "Served as a key technical and communications link at the 2025 Inspire Conference, ensuring the seamless delivery of professional presentations and a high-quality attendee experience.",
@@ -136,9 +139,26 @@ export const education: Experience[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Staples Canada",
+    role: "Digital Print Expert",
+    period: "Jun 2026 – Present",
+    summary: "Permanent Full-time · On-site · Winnipeg, Manitoba, Canada",
+    bullets: [
+      "Operated and maintained digital printing, finishing, and production equipment to ensure continuous workflow and minimize operational downtime.",
+      "Diagnosed and resolved routine hardware, software, and print production issues, applying structured troubleshooting techniques to maintain service quality.",
+      "Managed multiple production requests simultaneously while meeting strict deadlines and quality standards in a fast-paced environment.",
+      "Processed and verified digital files using Microsoft Office applications and print management systems, ensuring accuracy and compliance with customer specifications.",
+      "Performed quality assurance checks on printed materials and identified production issues before final delivery.",
+      "Provided technical guidance and customer support regarding print products, file formatting, and production requirements.",
+      "Maintained accurate production records and communicated status updates to team members to support efficient workflow management.",
+      "Followed workplace safety procedures and operational standards while supporting overnight production operations.",
+    ],
+  },
+  {
     company: "RRC Polytech",
     role: "Security Analyst & Developer | Industry Project",
     period: "Jan 2026 – May 2026",
+    summary: "Academic Industry Project · On-site · Winnipeg, Manitoba, Canada",
     photos: [
       "/experience/rrc/IMG_0352.JPEG",
     ],
@@ -156,6 +176,7 @@ export const experiences: Experience[] = [
     company: "Self-Employed",
     role: "English Second Language Tutor",
     period: "Jul 2023 – Jun 2024",
+    summary: "Self-employed · On-site · China",
     bullets: [
       "Provided one-on-one and small group tutoring to Chinese students, focusing on academic English, technical vocabulary, and professional communication.",
       "Designed structured lesson plans and practice materials to improve speaking, listening, reading, and writing proficiency for academic and workplace contexts.",

@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     default: "Yiming Han — IT Professional",
     template: "%s | Yiming Han",
   },
-  description: "Personal blog and portfolio of Yiming Han — IT professional and aspiring cybersecurity specialist based in Winnipeg, Canada.",
+  description:
+    "Personal blog and portfolio of Yiming Han — an IT and cybersecurity professional based in Winnipeg, Canada.",
 };
 
 export default function RootLayout({

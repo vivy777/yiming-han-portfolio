@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yiming Han — Personal Blog & Portfolio
 
-## Getting Started
+A personal website for presenting my IT and cybersecurity background, certifications,
+education, experience, selected projects, and technical writing.
 
-First, run the development server:
+Live site: [yiminghan.ca](https://yiminghan.ca)
+
+## Features
+
+- Static portfolio pages for skills, certifications, education, experience, and projects
+- Markdown-based blog with frontmatter, reading-time estimates, and GFM support
+- Statically generated article routes
+- Client-side PDF previews for professional certificates
+- Responsive photo galleries and a homepage image marquee
+- Vercel Analytics integration
+
+## Stack
+
+- Next.js 14 App Router
+- React 18 and TypeScript
+- Tailwind CSS
+- Markdown, `gray-matter`, `next-mdx-remote`, and `remark-gfm`
+- `pdfjs-dist`
+- Vercel Analytics
+
+The site intentionally uses local files instead of a database or CMS. Portfolio data
+lives in `src/data`, and blog posts live in `content/posts`.
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Useful commands:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+npm run start
+```
 
-## Learn More
+## Adding a Blog Post
 
-To learn more about Next.js, take a look at the following resources:
+Create a Markdown file in `content/posts`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```yaml
+---
+title: "Post title"
+date: "2026-06-06"
+tags: ["security", "networking"]
+excerpt: "A short description."
+published: true
+---
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The filename becomes the URL slug. For example, `network-notes.md` is published at
+`/blog/network-notes`.

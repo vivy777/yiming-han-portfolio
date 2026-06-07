@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 interface PhotoGalleryProps {
   photos: string[];
@@ -9,8 +9,14 @@ interface PhotoGalleryProps {
 export default function PhotoGallery({ photos }: PhotoGalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const prev = () => setActiveIndex((i) => (i !== null ? (i - 1 + photos.length) % photos.length : null));
-  const next = () => setActiveIndex((i) => (i !== null ? (i + 1) % photos.length : null));
+  const prev = useCallback(
+    () => setActiveIndex((i) => (i !== null ? (i - 1 + photos.length) % photos.length : null)),
+    [photos.length]
+  );
+  const next = useCallback(
+    () => setActiveIndex((i) => (i !== null ? (i + 1) % photos.length : null)),
+    [photos.length]
+  );
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -21,7 +27,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [activeIndex]);
+  }, [activeIndex, next, prev]);
 
   return (
     <>
